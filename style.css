@@ -25,6 +25,7 @@ nav{
     display: flex;
     justify-content: center;
     z-index: 999;
+    display: none;
 }
 nav .nav-content{
     width: 100%;
@@ -109,6 +110,11 @@ nav .nav-content .mail .txt-mail{
 
 
 
+
+/* ----------------------------------------------------------- HOME
+-------------------------------------------------------------- HOME
+-------------------------------------------------------------- */
+/* home section styling */
 .home{
     position: relative;
     width: 100%;
@@ -129,6 +135,7 @@ nav .nav-content .mail .txt-mail{
     padding-left: 4%;
     padding-right:4%;
 }
+/* home right side */
 .home .home-container .right-side{
     position: absolute;
     top: 170px;
@@ -145,6 +152,7 @@ nav .nav-content .mail .txt-mail{
 .home .home-container .right-side p span{
     color: #0098FF;
 }
+/* home left side  */
 .home .home-container .left-side{
 }
 .home .home-container .left-side .ddd-container{
@@ -183,7 +191,6 @@ nav .nav-content .mail .txt-mail{
 .home .home-container .left-side .ddd-container .card{
     width: 250px;
     height: 350px;
-    background-color: #a5a5a5;
     border: 2px solid black;
     text-align: center;
     margin-bottom: 40px;
@@ -205,8 +212,6 @@ nav .nav-content .mail .txt-mail{
     width: 250px;
     height: 350px;
     background-color: #a5a5a5;
-    border: 2px solid black;
-    text-align: center;
     margin-bottom: 40px;
     border-radius: 12px;
     box-shadow: 10px 10px 5px 2px #000000a4 ,15px 15px 10px 10px #41414125 ;
@@ -276,6 +281,7 @@ nav .nav-content .mail .txt-mail{
         transform: translateY(100px);
     }
 }
+/* laptpop responsivity */
 @media screen and (max-width:1200px){
     .home .home-container .left-side .ddd-container .first-groupe{
         top: -30%;
@@ -373,5 +379,165 @@ nav .nav-content .mail .txt-mail{
     }
     .home .home-container .right-side p{
         font-size: 4.3rem;
+    }
+}
+
+@media screen and (max-width:1030px){
+    .home .home-container .left-side .ddd-container .card{
+        width: 200px;
+        height: 300px;
+    }
+    .home .home-container .left-side .ddd-container .card-two{
+        width: 200px;
+        height: 300px;  
+    }
+    .home .home-container .left-side .ddd-container .first-groupe{
+        top: -40%;
+        right: -33%;
+        
+    }
+    .home .home-container .left-side .ddd-container .second-groupe{
+        top: -20%;
+        right: -70%;
+    }
+    .home .home-container .right-side{
+        top: 18vh;
+        left: 5vw;
+    }
+    .home .home-container .right-side p{
+        font-size: 3.8rem;
+    }
+}
+@media screen and (max-width:840px){
+    
+    .home .home-container .left-side .ddd-container .first-groupe{
+        top: -20%;
+        right: 10%;
+        transform: rotateY(-35deg) rotateZ(15deg) rotateX(70deg);
+        
+    }
+    .home .home-container .left-side .ddd-container .second-groupe{
+        top: -15%;
+        right: -70%;
+        transform: rotateY(-35deg) rotateZ(15deg) rotateX(70deg);
+    }
+    .home .home-container .right-side{
+        top: 16vh;
+        left: 5vw;
+    }
+    .home .home-container .right-side p{
+        font-size: 3.4rem;
+    }
+}
+@media screen and (max-width:700px){
+    .home .home-container .left-side .ddd-container .card{
+        width: 170px;
+        height: 240px;
+    }
+    .home .home-container .left-side .ddd-container .card-two{
+        width: 170px;
+        height: 240px;  
+    }
+    .home .home-container .left-side .ddd-container .first-groupe{
+        top: -12%;
+        right: 10%;
+        transform: rotateY(-35deg) rotateZ(15deg) rotateX(70deg);
+        
+    }
+    .home .home-container .left-side .ddd-container .second-groupe{
+        top: -0%;
+        right: -70%;
+        transform: rotateY(-35deg) rotateZ(15deg) rotateX(70deg);
+    }
+    .home .home-container .right-side{
+        top: 16vh;
+        left: 5vw;
+    }
+    .home .home-container .right-side p{
+        font-size: 3.4rem;
+    }
+}
+@media screen and (max-width:550px){
+    .home .home-container .left-side .ddd-container .card{
+        width: 170px;
+        height: 240px;
+    }
+    .home .home-container .left-side .ddd-container .card-two{
+        width: 170px;
+        height: 240px;  
+    }
+    .home .home-container .left-side .ddd-container .first-groupe{
+        top: -10%;
+        right: 10%;
+        transform: rotateY(-45deg) rotateZ(17deg) rotateX(60deg);
+        
+    }
+    .home .home-container .left-side .ddd-container .second-groupe{
+        top: 5%;
+        right: -70%;
+        transform: rotateY(-45deg) rotateZ(17deg) rotateX(60deg);
+    }
+    .home .home-container .right-side{
+        top: 18vh;
+        left: 5vw;
+    }
+    .home .home-container .right-side p{
+        font-size: 2.9rem;
+    }
+}
+@media screen and (max-width:430px){
+    .home .home-container .left-side .ddd-container .card{
+        width: 170px;
+        height: 240px;
+    }
+    .home .home-container .left-side .ddd-container .card-two{
+        width: 170px;
+        height: 240px;  
+    }
+    .home .home-container .left-side .ddd-container .first-groupe{
+        top: -15%;
+        right: 10%;
+        transform: rotateY(-45deg) rotateZ(17deg) rotateX(60deg);
+        
+    }
+    .home .home-container .left-side .ddd-container .second-groupe{
+        top: 5%;
+        right: -70%;
+        transform: rotateY(-45deg) rotateZ(17deg) rotateX(60deg);
+    }
+    .home .home-container .right-side{
+        top: 18vh;
+        left: 5vw;
+    }
+    .home .home-container .right-side p{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width:330px){
+    .home .home-container .left-side .ddd-container .card{
+        width: 140px;
+        height: 200px;
+    }
+    .home .home-container .left-side .ddd-container .card-two{
+        width: 140px;
+        height: 200px;  
+    }
+    .home .home-container .left-side .ddd-container .first-groupe{
+        top: -18%;
+        right: -20%;
+        transform: rotateY(-45deg) rotateZ(17deg) rotateX(60deg);
+        
+    }
+    .home .home-container .left-side .ddd-container .second-groupe{
+        top: 10%;
+        right: -70%;
+        transform: rotateY(-45deg) rotateZ(17deg) rotateX(60deg);
+    }
+    .home .home-container .right-side{
+        top: 18vh;
+        left: 5vw;
+    }
+    .home .home-container .right-side p{
+        font-size: 2rem;
     }
 }
