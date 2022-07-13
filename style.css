@@ -158,7 +158,7 @@ nav .nav-content .mail .txt-mail{
 @media screen and (max-width:500px){
     nav .nav-content  .navbtn{
         width: 30px;
-        padding-bottom: 11px;
+        padding-bottom: 12px;
     }
     nav{
         height: 70px;
