@@ -25,7 +25,6 @@ nav{
     display: flex;
     justify-content: center;
     z-index: 999;
-    display: none;
 }
 nav .nav-content{
     width: 100%;
@@ -65,6 +64,7 @@ nav .nav-content .navlink{
     display: flex;
     justify-content: space-around;
     width: 50%;
+    
 }
 nav .nav-content .navlink .links{
     display: flex;
@@ -90,9 +90,41 @@ nav .nav-content .navlink ul li a{
     font-size: 1rem;
     
 }
+nav .nav-content .navlink ul li a:hover{
+    color: #0098FF; 
+}
 nav .nav-content .navlink ul li a.active{
     color: #0098FF;
 }
+/* navigation button */
+nav .nav-content  .navbtn{
+    width: 38px;
+    height: 100;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 13px;
+    margin-right: 4%;
+    display: none;
+}
+nav .nav-content  .navbtn .btnbox{
+    width: 100%;
+    height: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+nav .nav-content  .navbtn .btnbox .btn{
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+}
+nav .nav-content  .navbtn .btnbox .btntwo{
+    background-color: #2cabff;
+    transform: translateX(-0px);
+}
+
 /* navigation bar mail */
 nav .nav-content .mail{
     display: flex;
@@ -106,6 +138,85 @@ nav .nav-content .mail .txt-mail{
    letter-spacing: -0.5px;
    cursor: pointer;
    font-size: 1rem;
+}
+@media screen and (max-width:1200px){
+    nav .nav-content .navlink{
+        justify-content: space-between;
+        width: 60%;
+    }
+}
+@media screen and (max-width:1000px){
+    nav .nav-content .navlink{
+        display: none;
+    }
+    nav .nav-content  .navbtn{
+        display:flex;
+    }
+}
+@media screen and (max-width:500px){
+    nav .nav-content  .navbtn{
+        width: 30px;
+        padding-bottom: 10px;
+    }
+    nav{
+        height: 70px;
+    }
+}
+@media screen and (max-width:400px){
+    nav .nav-content .logo img{
+        height: 24px;
+        margin-right: 7px;
+    }
+    nav .nav-content .logo{
+        margin-left: 1%;
+    }
+    nav .nav-content .logo p{
+        font-family: 'poppins' , sans-serif;
+        font-weight: 200;
+        font-size: 0.9rem;
+        letter-spacing: 0px;
+    }
+    nav .nav-content .logo p span{
+        font-weight: 500;
+        font-size: .9rem;
+    }
+    nav .nav-content  .navbtn{
+        margin-right: 1%;
+        
+    }
+}
+@media screen and (max-width:320px){
+    nav .nav-content .logo img{
+        height: 22px;
+        margin-right: 7px;
+    }
+    nav .nav-content .logo{
+        margin-left: 0%;
+    }
+    nav .nav-content .logo p{
+        font-family: 'poppins' , sans-serif;
+        font-weight: 200;
+        font-size: 0.75rem;
+        letter-spacing: 0px;
+    }
+    nav .nav-content .logo p span{
+        font-weight: 500;
+        font-size: .75rem;
+    }
+    nav .nav-content  .navbtn{
+        margin-right: 0%;
+        
+    }
+    nav .nav-content  .navbtn{
+        width: 26px;
+        
+    }
+    nav .nav-content  .navbtn .btnbox{
+        height: 16px;
+    }
+    nav .nav-content  .navbtn .btnbox .btn{
+        height: 1.5px;
+    }
 }
 
 
@@ -227,6 +338,7 @@ nav .nav-content .mail .txt-mail{
 .home .home-container .left-side .ddd-container .card-two img{
     width: 100%;
     height: 100%;
+
 }
 @keyframes animate {
     0%{
@@ -281,7 +393,7 @@ nav .nav-content .mail .txt-mail{
         transform: translateY(100px);
     }
 }
-/* laptpop responsivity */
+/* all devices responsivity */
 @media screen and (max-width:1200px){
     .home .home-container .left-side .ddd-container .first-groupe{
         top: -30%;
@@ -381,7 +493,6 @@ nav .nav-content .mail .txt-mail{
         font-size: 4.3rem;
     }
 }
-
 @media screen and (max-width:1030px){
     .home .home-container .left-side .ddd-container .card{
         width: 200px;
