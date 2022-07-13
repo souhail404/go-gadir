@@ -12,6 +12,7 @@ body{
     display: flex;
     justify-content: center;
     height: 300vh;
+    min-width: 280px;
 }
 
 /* navigation bar */
@@ -25,6 +26,7 @@ nav{
     display: flex;
     justify-content: center;
     z-index: 999;
+    min-width: 280px;
 }
 nav .nav-content{
     width: 100%;
@@ -156,7 +158,7 @@ nav .nav-content .mail .txt-mail{
 @media screen and (max-width:500px){
     nav .nav-content  .navbtn{
         width: 30px;
-        padding-bottom: 10px;
+        padding-bottom: 11px;
     }
     nav{
         height: 70px;
